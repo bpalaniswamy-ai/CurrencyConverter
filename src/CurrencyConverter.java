@@ -1,35 +1,19 @@
 public class CurrencyConverter {
-    int rupee = 63;
 
-    int dirham = 3; // UAE
-
-    int real = 3;  // brazilian
-
-    int chilean_peso = 595;
-
-    int  mexican_peso = 18;
-
-    int yen = 107;
-
-    int $australian = 2;  // australian dollar
-
-    int dollar;
-
-    int Rupee = 63;
+    double[] currencies = {63.0, 3.0, 3.0, 595.0, 18.0, 107.0, 2.0};
 
     void printCurrencies(){
-        System.out.println("rupee: " + rupee);
-        System.out.println("$australian: " + $australian);
-        System.out.println("dirham: " + dirham);
-        System.out.println("real: " + real);
-        System.out.println("chilean_peso: " + chilean_peso);
-        System.out.println("mexican_peso: " + mexican_peso);
-        System.out.println("yen: " + yen);
+        System.out.println("rupee: " + currencies[0]);
+        System.out.println("dirham: " + currencies[1]);
+        System.out.println("real: " + currencies[2]);
+        System.out.println("chilean_peso: " + currencies[3]);
+        System.out.println("mexican_peso: " + currencies[4]);
+        System.out.println("yen: " + currencies[5]);
+        System.out.println("$australian: " + currencies[6]);
     }
 
     public static void main(String[] args) {
         CurrencyConverter cc = new CurrencyConverter();
         cc.printCurrencies();
     }
-
 }
